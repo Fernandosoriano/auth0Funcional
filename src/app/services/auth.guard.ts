@@ -17,3 +17,4 @@ export class AuthGuard implements CanActivate {
   }
   
 }
+// este archivo se gener con ng g guard services/guard   o sea que la novedad fue eso del guard

@@ -15,7 +15,7 @@ const routes: Routes = [
   { 
     path: 'protegida',
     component: ProtegidaComponent,
-    canActivate: [ AuthGuard ]
+    canActivate: [ AuthGuard ]  // una condición que se debe pasar para poder entrar a esta página , básicamente sólo puedes enttrar a ella  si estas logeado
   },
   { path: 'callback', component: CallbackComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }

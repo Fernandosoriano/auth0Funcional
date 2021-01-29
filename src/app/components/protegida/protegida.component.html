@@ -3,6 +3,14 @@
 
 <pre *ngIf="auth.userProfile$ | async as profile">
 
-    <code>{{ profile | json }}</code>
+     <!-- el que tiene símbolo de dolar significa que es un observable
+     en este caso estás esperando la respuesta que es userprofile
+     , por eso es asíncrono, y una vez que te entrega la respuesta
+     lo  entrega con el alias de profile -->
+    <code>{{ profile | json }}</code> 
+     
+    <!-- esta etiqueta code es para mostrar código adentro , es una etiqueta
+    de html que va a ser que el código se vea bonito,
+    va a impriimr un json -->
     
 </pre>

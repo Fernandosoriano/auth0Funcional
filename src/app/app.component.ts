@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   constructor( private auth: AuthService ) {}
 
   ngOnInit() {
-    this.auth.localAuthSetup();
+    this.auth.localAuthSetup(); // este método es para que la sesión se mantanga iniciada auqnue le demos un refresh a la página 
   }
 
 
